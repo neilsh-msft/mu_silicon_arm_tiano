@@ -782,3 +782,41 @@ PlatformBootManagerUnableToBoot (
 {
   return;
 }
+
+/**   MSCHANGE begin
+   Do Platform specific action required at start of BDS
+
+**/
+VOID
+EFIAPI
+PlatformBootManagerBdsEntry (
+  VOID
+  )
+{
+  return;
+}
+
+/**
+ProcessBootCompletion
+*/
+VOID
+EFIAPI
+PlatformBootManagerProcessBootCompletion (
+  IN EFI_BOOT_MANAGER_LOAD_OPTION *BootOption
+  )
+{
+  return;
+}
+
+/**
+ HardKeyBoot
+*/
+VOID
+EFIAPI
+PlatformBootManagerPriorityBoot (
+  UINT16 **BootNext
+  )
+{
+  return;
+}
+
